@@ -749,18 +749,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cXO-k4-1iv">
-                                <rect key="frame" x="176" y="263" width="98" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cXO-k4-1iv">
+                                <rect key="frame" x="164" y="264" width="123" height="21"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Manage Rooms" id="AzF-PM-6Tp">
-                                    <font key="font" metaFont="system"/>
+                                    <font key="font" metaFont="system" size="17"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rov-rH-8tp">
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rov-rH-8tp">
                                 <rect key="frame" x="14" y="252" width="70" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="push" title="Back" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Lns-v4-fVo">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -769,12 +767,78 @@
                                     <action selector="dismissController:" target="JcJ-19-vpK" id="10k-5o-NQa"/>
                                 </connections>
                             </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z6k-P5-v5F">
+                                <rect key="frame" x="89" y="34" width="311" height="168"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="ALL THE ROOM DETAILS THAT YOU'VE ADDED" id="Tdx-WD-XaS">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6lm-AV-sR5">
+                                <rect key="frame" x="389" y="252" width="47" height="32"/>
+                                <buttonCell key="cell" type="push" bezelStyle="rounded" image="NSAddTemplate" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="mMc-ij-JpZ">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <segue destination="FoY-3P-VTt" kind="custom" customClass="SegueBetweenEmbedded" id="G3s-jA-Qhi"/>
+                                </connections>
+                            </button>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="cXO-k4-1iv" firstAttribute="centerX" secondItem="iTm-TK-aG8" secondAttribute="centerX" id="CWl-3G-Byn"/>
+                            <constraint firstItem="6lm-AV-sR5" firstAttribute="top" secondItem="iTm-TK-aG8" secondAttribute="top" constant="20" id="E0j-YS-PQ9"/>
+                            <constraint firstAttribute="trailing" secondItem="6lm-AV-sR5" secondAttribute="trailing" constant="20" id="JLJ-9z-mAu"/>
+                            <constraint firstItem="rov-rH-8tp" firstAttribute="top" secondItem="iTm-TK-aG8" secondAttribute="top" constant="20" id="fs7-vA-g0O"/>
+                            <constraint firstItem="rov-rH-8tp" firstAttribute="leading" secondItem="iTm-TK-aG8" secondAttribute="leading" constant="20" id="h0c-FV-7cC"/>
+                            <constraint firstItem="cXO-k4-1iv" firstAttribute="top" secondItem="iTm-TK-aG8" secondAttribute="top" constant="15" id="u66-c6-fWQ"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <customObject id="wLp-He-CkK" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="587" y="1138"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="WqG-Xx-hmV">
+            <objects>
+                <viewController id="FoY-3P-VTt" sceneMemberID="viewController">
+                    <view key="view" id="KnE-cH-x3W">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="zfO-8b-hAT">
+                                <rect key="frame" x="20" y="252" width="70" height="32"/>
+                                <buttonCell key="cell" type="push" title="Back" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="bTs-x5-Sb0">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="dismissController:" target="FoY-3P-VTt" id="snu-af-Xng"/>
+                                </connections>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="DDE-XY-08b">
+                                <rect key="frame" x="192" y="261" width="67" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Add Room" id="zxM-rd-TAy">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="zfO-8b-hAT" firstAttribute="leading" secondItem="KnE-cH-x3W" secondAttribute="leading" constant="26" id="0Yz-v3-b2u"/>
+                            <constraint firstItem="zfO-8b-hAT" firstAttribute="top" secondItem="KnE-cH-x3W" secondAttribute="top" constant="20" id="3Vs-Ub-hP3"/>
+                            <constraint firstItem="DDE-XY-08b" firstAttribute="centerX" secondItem="KnE-cH-x3W" secondAttribute="centerX" id="Xug-0A-r6b"/>
+                            <constraint firstItem="DDE-XY-08b" firstAttribute="top" secondItem="KnE-cH-x3W" secondAttribute="top" constant="22" id="gTM-ER-vrk"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="pcd-c4-BVJ" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1149" y="1138"/>
         </scene>
         <!--Content Manager View Controller-->
         <scene sceneID="ug9-cH-CQC">
@@ -804,4 +868,7 @@
             <point key="canvasLocation" x="11" y="710"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="NSAddTemplate" width="11" height="11"/>
+    </resources>
 </document>
