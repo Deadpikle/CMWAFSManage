@@ -10,4 +10,22 @@
 
 @implementation Room
 
+-(void)insertIntoDatabase {
+    // TODO:
+    // create INSERT INTO Rooms (...) string
+    // grab database
+    // insert into database
+    // return YES/NO for success/failure
+}
+
++(NSArray<Room*>*)loadAllRooms {
+    // TODO:
+    // SELECT * FROM Rooms
+    
+    // while (...not done...)
+    //    create Room object
+    //    add to rooms array
+    return nil;
+}
+
 @end

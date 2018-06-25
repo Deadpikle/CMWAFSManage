@@ -18,4 +18,8 @@
 
 @property NSColor *color;
 
+-(void)insertIntoDatabase;
+
++(NSArray<Room*>*)loadAllRooms;
+
 @end
