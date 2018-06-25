@@ -17,6 +17,9 @@
 		342C4F8F20E066C300DDD657 /* SegueBetweenEmbedded.m in Sources */ = {isa = PBXBuildFile; fileRef = 342C4F8A20E066C300DDD657 /* SegueBetweenEmbedded.m */; };
 		342C4F9020E066C300DDD657 /* ContentManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 342C4F8D20E066C300DDD657 /* ContentManagerViewController.m */; };
 		342C4F9620E06A1500DDD657 /* Room.m in Sources */ = {isa = PBXBuildFile; fileRef = 342C4F9520E06A1500DDD657 /* Room.m */; };
+		342C4F9920E06C3200DDD657 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 342C4F9820E06C3200DDD657 /* Utilities.m */; };
+		342C4F9C20E06C8F00DDD657 /* DBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 342C4F9B20E06C8F00DDD657 /* DBHelper.m */; };
+		342C4F9F20E06D4800DDD657 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 342C4F9E20E06D4800DDD657 /* Constants.m */; };
 		4487A409DE352AE0D8171598 /* Pods_CMWAFSManagerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80CE5ED08C86C560FB92D21F /* Pods_CMWAFSManagerUITests.framework */; };
 		5E2F84BA6280A6A78747E5EF /* Pods_CMWAFSManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E1E70E167560CC48C19FE03 /* Pods_CMWAFSManager.framework */; };
 		F894259AEEFFC806838F4D75 /* Pods_CMWAFSManagerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F617435833EA0E011DF85F0A /* Pods_CMWAFSManagerTests.framework */; };
@@ -65,6 +68,12 @@
 		342C4F9220E0676B00DDD657 /* ContentManagerViewControllerHolderProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContentManagerViewControllerHolderProtocol.h; sourceTree = "<group>"; };
 		342C4F9420E06A1500DDD657 /* Room.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Room.h; sourceTree = "<group>"; };
 		342C4F9520E06A1500DDD657 /* Room.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Room.m; sourceTree = "<group>"; };
+		342C4F9720E06C3200DDD657 /* Utilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
+		342C4F9820E06C3200DDD657 /* Utilities.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
+		342C4F9A20E06C8F00DDD657 /* DBHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBHelper.h; sourceTree = "<group>"; };
+		342C4F9B20E06C8F00DDD657 /* DBHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBHelper.m; sourceTree = "<group>"; };
+		342C4F9D20E06D4800DDD657 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		342C4F9E20E06D4800DDD657 /* Constants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		4C540086FB56D0EA99253DF9 /* Pods-CMWAFSManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CMWAFSManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-CMWAFSManager/Pods-CMWAFSManager.release.xcconfig"; sourceTree = "<group>"; };
 		5E1E70E167560CC48C19FE03 /* Pods_CMWAFSManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CMWAFSManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80CE5ED08C86C560FB92D21F /* Pods_CMWAFSManagerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CMWAFSManagerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -165,8 +174,14 @@
 		342C4F8920E066C300DDD657 /* Misc */ = {
 			isa = PBXGroup;
 			children = (
+				342C4F9D20E06D4800DDD657 /* Constants.h */,
+				342C4F9E20E06D4800DDD657 /* Constants.m */,
+				342C4F9A20E06C8F00DDD657 /* DBHelper.h */,
+				342C4F9B20E06C8F00DDD657 /* DBHelper.m */,
 				342C4F8B20E066C300DDD657 /* SegueBetweenEmbedded.h */,
 				342C4F8A20E066C300DDD657 /* SegueBetweenEmbedded.m */,
+				342C4F9720E06C3200DDD657 /* Utilities.h */,
+				342C4F9820E06C3200DDD657 /* Utilities.m */,
 			);
 			path = Misc;
 			sourceTree = "<group>";
@@ -511,9 +526,12 @@
 				342C4F9620E06A1500DDD657 /* Room.m in Sources */,
 				342C4F5E20E0615E00DDD657 /* ViewController.m in Sources */,
 				342C4F6620E0616000DDD657 /* main.m in Sources */,
+				342C4F9C20E06C8F00DDD657 /* DBHelper.m in Sources */,
 				342C4F9020E066C300DDD657 /* ContentManagerViewController.m in Sources */,
 				342C4F8F20E066C300DDD657 /* SegueBetweenEmbedded.m in Sources */,
+				342C4F9920E06C3200DDD657 /* Utilities.m in Sources */,
 				342C4F5B20E0615E00DDD657 /* AppDelegate.m in Sources */,
+				342C4F9F20E06D4800DDD657 /* Constants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -678,7 +696,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = CMWAFSManager/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pikleproductions.cmwafsmanager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -693,7 +714,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = CMWAFSManager/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pikleproductions.cmwafsmanager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -707,7 +731,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = CMWAFSManagerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pikleproductions.cmwafsmanage.CMWAFSManagerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CMWAFSManager.app/Contents/MacOS/CMWAFSManager";
@@ -722,7 +750,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = CMWAFSManagerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pikleproductions.cmwafsmanage.CMWAFSManagerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CMWAFSManager.app/Contents/MacOS/CMWAFSManager";
@@ -736,7 +768,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = CMWAFSManagerUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pikleproductions.cmwafsmanage.CMWAFSManagerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = CMWAFSManager;
@@ -750,7 +786,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = CMWAFSManagerUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pikleproductions.cmwafsmanage.CMWAFSManagerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = CMWAFSManager;
