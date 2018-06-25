@@ -16,6 +16,7 @@
 		342C4F7C20E0616000DDD657 /* CMWAFSManagerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 342C4F7B20E0616000DDD657 /* CMWAFSManagerUITests.m */; };
 		342C4F8F20E066C300DDD657 /* SegueBetweenEmbedded.m in Sources */ = {isa = PBXBuildFile; fileRef = 342C4F8A20E066C300DDD657 /* SegueBetweenEmbedded.m */; };
 		342C4F9020E066C300DDD657 /* ContentManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 342C4F8D20E066C300DDD657 /* ContentManagerViewController.m */; };
+		342C4F9620E06A1500DDD657 /* Room.m in Sources */ = {isa = PBXBuildFile; fileRef = 342C4F9520E06A1500DDD657 /* Room.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		342C4F8D20E066C300DDD657 /* ContentManagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentManagerViewController.m; sourceTree = "<group>"; };
 		342C4F8E20E066C300DDD657 /* ContentManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentManagerViewController.h; sourceTree = "<group>"; };
 		342C4F9220E0676B00DDD657 /* ContentManagerViewControllerHolderProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContentManagerViewControllerHolderProtocol.h; sourceTree = "<group>"; };
+		342C4F9420E06A1500DDD657 /* Room.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Room.h; sourceTree = "<group>"; };
+		342C4F9520E06A1500DDD657 /* Room.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Room.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +110,7 @@
 		342C4F5820E0615E00DDD657 /* CMWAFSManager */ = {
 			isa = PBXGroup;
 			children = (
+				342C4F9320E069ED00DDD657 /* Models */,
 				342C4F8920E066C300DDD657 /* Misc */,
 				342C4F9120E0675100DDD657 /* Protocol */,
 				342C4F8C20E066C300DDD657 /* ViewControllers */,
@@ -165,6 +169,15 @@
 				342C4F9220E0676B00DDD657 /* ContentManagerViewControllerHolderProtocol.h */,
 			);
 			path = Protocol;
+			sourceTree = "<group>";
+		};
+		342C4F9320E069ED00DDD657 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				342C4F9420E06A1500DDD657 /* Room.h */,
+				342C4F9520E06A1500DDD657 /* Room.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,6 +309,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				342C4F9620E06A1500DDD657 /* Room.m in Sources */,
 				342C4F5E20E0615E00DDD657 /* ViewController.m in Sources */,
 				342C4F6620E0616000DDD657 /* main.m in Sources */,
 				342C4F9020E066C300DDD657 /* ContentManagerViewController.m in Sources */,
