@@ -18,9 +18,29 @@
     FMDatabase *database = [FMDatabase databaseWithPath:dbLocation];
     if ([database open]) {
         // run migrations
+        [DBHelper runMigrations:database];
         return database;
     }
     return nil;
+}
+
++(void)runMigrations:(FMDatabase*)database {
+    // TODO: check if database is nil and check if open
+    // Check the database version
+    NSUInteger version = database.userVersion; // PRAGMA user_version;
+    version++; // check for next version
+    switch (version) {
+        case 1: {
+            NSString *insertRoomsTable = @" \
+                CREATE TABLE Rooms ( \
+                    RoomID INTEGER PRIMARY KEY AUTOINCREMENT, \
+                    BuildingName TEXT, \
+                    Number INTEGER, \
+                    MaxPeople INTEGER, \
+                    Color TEXT)";
+            [database executeUpdate:insertRoomsTable];
+        }
+    }
 }
 
 @end
