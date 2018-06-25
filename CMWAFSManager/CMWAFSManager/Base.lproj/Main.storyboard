@@ -695,7 +695,7 @@
                         </connections>
                     </window>
                     <connections>
-                        <segue destination="XfG-lQ-9wD" kind="relationship" relationship="window.shadowedContentViewController" id="cq2-FE-JQM"/>
+                        <segue destination="bod-QU-PwA" kind="relationship" relationship="window.shadowedContentViewController" id="Vbr-od-A7y"/>
                     </connections>
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -718,16 +718,90 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="FyY-EP-v21">
+                                <rect key="frame" x="173" y="154" width="134" height="32"/>
+                                <buttonCell key="cell" type="push" title="Manage Rooms" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ooD-uo-pnC">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <segue destination="JcJ-19-vpK" kind="custom" customClass="SegueBetweenEmbedded" id="296-zc-Sz0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="Y1b-7S-wJx" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="15z-Ig-gnD"/>
+                            <constraint firstItem="FyY-EP-v21" firstAttribute="centerX" secondItem="Y1b-7S-wJx" secondAttribute="centerX" id="5qJ-5J-RkZ"/>
                             <constraint firstItem="Y1b-7S-wJx" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="abs-e9-6k9"/>
+                            <constraint firstItem="FyY-EP-v21" firstAttribute="top" secondItem="Y1b-7S-wJx" secondAttribute="bottom" constant="46" id="eVf-Jg-8wE"/>
                         </constraints>
                     </view>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="587" y="717"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="rFC-tA-Te0">
+            <objects>
+                <viewController id="JcJ-19-vpK" sceneMemberID="viewController">
+                    <view key="view" id="iTm-TK-aG8">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cXO-k4-1iv">
+                                <rect key="frame" x="176" y="263" width="98" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Manage Rooms" id="AzF-PM-6Tp">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rov-rH-8tp">
+                                <rect key="frame" x="14" y="252" width="70" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Back" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Lns-v4-fVo">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="dismissController:" target="JcJ-19-vpK" id="10k-5o-NQa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </view>
+                </viewController>
+                <customObject id="wLp-He-CkK" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="587" y="1138"/>
+        </scene>
+        <!--Content Manager View Controller-->
+        <scene sceneID="ug9-cH-CQC">
+            <objects>
+                <viewController id="bod-QU-PwA" customClass="ContentManagerViewController" sceneMemberID="viewController">
+                    <view key="view" id="d33-PG-RXZ">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <containerView translatesAutoresizingMaskIntoConstraints="NO" id="ypT-9c-DEr">
+                                <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                                <connections>
+                                    <segue destination="XfG-lQ-9wD" kind="embed" id="08i-yR-lJm"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="ypT-9c-DEr" firstAttribute="leading" secondItem="d33-PG-RXZ" secondAttribute="leading" id="Z4X-Pu-2h9"/>
+                            <constraint firstItem="ypT-9c-DEr" firstAttribute="top" secondItem="d33-PG-RXZ" secondAttribute="top" id="bnC-i7-3JC"/>
+                            <constraint firstAttribute="bottom" secondItem="ypT-9c-DEr" secondAttribute="bottom" id="kbK-1A-uSb"/>
+                            <constraint firstAttribute="trailing" secondItem="ypT-9c-DEr" secondAttribute="trailing" id="vQz-AW-r4w"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="2QR-eU-6Q5" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="11" y="710"/>
         </scene>
     </scenes>
 </document>
