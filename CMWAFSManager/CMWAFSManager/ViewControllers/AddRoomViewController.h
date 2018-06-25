@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  AddRoomViewController.h
 //  CMWAFSManager
 //
 //  Created by School of Computing Macbook on 6/24/18.
@@ -8,8 +8,6 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface ViewController : NSViewController
-
+@interface AddRoomViewController : NSViewController
 
 @end
-
