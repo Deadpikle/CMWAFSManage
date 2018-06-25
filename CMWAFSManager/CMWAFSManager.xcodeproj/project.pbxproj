@@ -311,6 +311,11 @@
 				TargetAttributes = {
 					342C4F5520E0615E00DDD657 = {
 						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
 					};
 					342C4F6B20E0616000DDD657 = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -692,7 +697,6 @@
 			baseConfigurationReference = F356D981C1659BDD30BA2C13 /* Pods-CMWAFSManager.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = CMWAFSManager/CMWAFSManager.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = CMWAFSManager/Info.plist;
@@ -710,7 +714,6 @@
 			baseConfigurationReference = 4C540086FB56D0EA99253DF9 /* Pods-CMWAFSManager.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = CMWAFSManager/CMWAFSManager.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = CMWAFSManager/Info.plist;
