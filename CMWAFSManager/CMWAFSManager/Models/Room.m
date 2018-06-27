@@ -42,13 +42,24 @@
 }
 
 +(NSArray<Room*>*)loadAllRooms {
-    // TODO:
-    // SELECT * FROM Rooms
-    
-    // while (...not done...)
-    //    create Room object
-    //    add to rooms array
-    return nil;
+    NSMutableArray<Room*> *data = [NSMutableArray array];
+    FMDatabase *database = [DBHelper openDatabase];
+    if (database) {
+        NSString *query = @"\
+            SELECT BuildingName, Number, MaxPeople, Color \
+            FROM Rooms \
+            ORDER BY BuildingName, RoomNumber";
+        FMResultSet *results = [database executeQuery:query];
+        while ([results next]) {
+            Room *room = [[Room alloc] init];
+            room.buildingName = [results stringForColumnIndex:0];
+            room.number = [results intForColumnIndex:1];
+            room.maxNumberOfPeople = [results intForColumnIndex:2];
+            room.color = [Utilities colorWithHexColorString:[results stringForColumnIndex:3]];
+            [data addObject:room];
+        }
+    }
+    return data;
 }
 
 +(NSArray<NSString*>*)loadAllBuildingNames {
