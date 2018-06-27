@@ -22,4 +22,6 @@
 
 +(NSArray<Room*>*)loadAllRooms;
 
++(NSArray<NSString*>*)loadAllBuildingNames;
+
 @end
