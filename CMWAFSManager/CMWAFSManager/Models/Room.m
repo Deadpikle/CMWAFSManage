@@ -30,7 +30,7 @@
 }
 
 +(NSArray<NSString*>*)loadAllBuildingNames {
-    NSMutableArray *data = [NSMutableArray array];
+    NSMutableArray<NSString*> *data = [NSMutableArray array];
     FMDatabase *database = [DBHelper openDatabase];
     if (database) {
         NSString *query = @"SELECT DISTINCT BuildingName \

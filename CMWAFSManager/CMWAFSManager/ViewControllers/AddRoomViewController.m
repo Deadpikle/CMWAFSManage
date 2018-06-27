@@ -12,6 +12,8 @@
 
 @interface AddRoomViewController ()
 
+@property NSArray<NSString*> *alreadyAddedBuildingNames;
+
 @property (weak) IBOutlet NSComboBox *buildingComboBox;
 @property (weak) IBOutlet NSTextField *maxPeopleTextField;
 @property (weak) IBOutlet NSTextField *roomNumberTextField;
@@ -25,7 +27,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do view setup here.
+    
+    self.alreadyAddedBuildingNames = [Room loadAllBuildingNames];
+    [self.buildingComboBox addItemsWithObjectValues:self.alreadyAddedBuildingNames];
 }
 
 - (IBAction)saveNewRoom:(NSButton *)sender {
