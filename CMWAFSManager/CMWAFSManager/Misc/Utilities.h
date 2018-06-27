@@ -12,5 +12,6 @@
 @interface Utilities : NSObject
 
 + (NSColor*)colorWithHexColorString:(NSString*)inColorString;
++ (NSString*)convertColorToString:(NSColor*)color;
 
 @end
