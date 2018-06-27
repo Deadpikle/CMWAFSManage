@@ -7,9 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <AppKit/AppKit.h>
 
 @interface Utilities : NSObject
 
-
++ (NSColor*)colorWithHexColorString:(NSString*)inColorString;
 
 @end

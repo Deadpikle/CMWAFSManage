@@ -956,6 +956,12 @@
                             <constraint firstItem="fIf-nb-A8H" firstAttribute="leading" secondItem="VqN-ob-lBH" secondAttribute="leading" id="yuw-o8-Wfv"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="buildingComboBox" destination="fIf-nb-A8H" id="ULy-Ia-6ez"/>
+                        <outlet property="colorTextField" destination="pIe-gD-NYO" id="jsG-DV-wdj"/>
+                        <outlet property="maxPeopleTextField" destination="XQI-Ay-jFq" id="0mp-Oo-Ggf"/>
+                        <outlet property="roomNumberTextField" destination="4wp-3t-qM2" id="BfA-hS-wyz"/>
+                    </connections>
                 </viewController>
                 <customObject id="pcd-c4-BVJ" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>

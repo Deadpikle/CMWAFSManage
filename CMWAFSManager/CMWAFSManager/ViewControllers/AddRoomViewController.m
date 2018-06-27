@@ -7,10 +7,16 @@
 //
 
 #import "AddRoomViewController.h"
+#import "Room.h"
+#import "Utilities.h"
 
 @interface AddRoomViewController ()
 
-@property (weak) IBOutlet NSTextField *buildingNameTextField;
+@property (weak) IBOutlet NSComboBox *buildingComboBox;
+@property (weak) IBOutlet NSTextField *maxPeopleTextField;
+@property (weak) IBOutlet NSTextField *roomNumberTextField;
+@property (weak) IBOutlet NSTextField *colorTextField;
+
 - (IBAction)saveNewRoom:(NSButton *)sender;
 
 @end
@@ -23,12 +29,19 @@
 }
 
 - (IBAction)saveNewRoom:(NSButton *)sender {
-    NSLog(@"User wants to save the new room!");
-    NSLog(@"User building name is: %@", self.buildingNameTextField.stringValue);
+    // TODO: if max number of people < 0, error!
+    // TODO: if room number < 0, error!
     // Create room object
+    Room *room = [[Room alloc] init];
+    room.buildingName = self.buildingComboBox.stringValue;
+    room.maxNumberOfPeople = [self.maxPeopleTextField.stringValue integerValue];
+    room.number = [self.roomNumberTextField.stringValue integerValue];
+    room.color = [Utilities colorWithHexColorString:self.colorTextField.stringValue];
     // Save!
+    [room insertIntoDatabase];
     // Tell user if it succeeded or kick them back to list of rooms or something like that
-    //[self dismissController:self];
+    // TODO: show error if failed :(
+    [self dismissController:self];
 }
 
 @end
