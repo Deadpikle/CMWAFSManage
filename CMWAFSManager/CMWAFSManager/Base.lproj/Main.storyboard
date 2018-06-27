@@ -742,10 +742,10 @@
             </objects>
             <point key="canvasLocation" x="587" y="717"/>
         </scene>
-        <!--View Controller-->
+        <!--Manage Rooms View Controller-->
         <scene sceneID="rFC-tA-Te0">
             <objects>
-                <viewController id="JcJ-19-vpK" sceneMemberID="viewController">
+                <viewController id="JcJ-19-vpK" customClass="ManageRoomsViewController" sceneMemberID="viewController">
                     <view key="view" id="iTm-TK-aG8">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>

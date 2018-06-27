@@ -48,7 +48,7 @@
         NSString *query = @"\
             SELECT BuildingName, Number, MaxPeople, Color \
             FROM Rooms \
-            ORDER BY BuildingName, RoomNumber";
+            ORDER BY BuildingName, Number";
         FMResultSet *results = [database executeQuery:query];
         while ([results next]) {
             Room *room = [[Room alloc] init];

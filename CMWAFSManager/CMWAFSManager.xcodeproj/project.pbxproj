@@ -20,6 +20,7 @@
 		342C4F9C20E06C8F00DDD657 /* DBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 342C4F9B20E06C8F00DDD657 /* DBHelper.m */; };
 		342C4F9F20E06D4800DDD657 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 342C4F9E20E06D4800DDD657 /* Constants.m */; };
 		342C4FA220E0712E00DDD657 /* AddRoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 342C4FA120E0712E00DDD657 /* AddRoomViewController.m */; };
+		348C1CE720E317FA00658EFB /* ManageRoomsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 348C1CE620E317FA00658EFB /* ManageRoomsViewController.m */; };
 		4487A409DE352AE0D8171598 /* Pods_CMWAFSManagerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80CE5ED08C86C560FB92D21F /* Pods_CMWAFSManagerUITests.framework */; };
 		5E2F84BA6280A6A78747E5EF /* Pods_CMWAFSManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E1E70E167560CC48C19FE03 /* Pods_CMWAFSManager.framework */; };
 		F894259AEEFFC806838F4D75 /* Pods_CMWAFSManagerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F617435833EA0E011DF85F0A /* Pods_CMWAFSManagerTests.framework */; };
@@ -74,6 +75,8 @@
 		342C4F9E20E06D4800DDD657 /* Constants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		342C4FA020E0712E00DDD657 /* AddRoomViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddRoomViewController.h; sourceTree = "<group>"; };
 		342C4FA120E0712E00DDD657 /* AddRoomViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddRoomViewController.m; sourceTree = "<group>"; };
+		348C1CE520E317FA00658EFB /* ManageRoomsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManageRoomsViewController.h; sourceTree = "<group>"; };
+		348C1CE620E317FA00658EFB /* ManageRoomsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManageRoomsViewController.m; sourceTree = "<group>"; };
 		4C540086FB56D0EA99253DF9 /* Pods-CMWAFSManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CMWAFSManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-CMWAFSManager/Pods-CMWAFSManager.release.xcconfig"; sourceTree = "<group>"; };
 		5E1E70E167560CC48C19FE03 /* Pods_CMWAFSManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CMWAFSManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80CE5ED08C86C560FB92D21F /* Pods_CMWAFSManagerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CMWAFSManagerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -191,6 +194,8 @@
 				342C4FA120E0712E00DDD657 /* AddRoomViewController.m */,
 				342C4F8E20E066C300DDD657 /* ContentManagerViewController.h */,
 				342C4F8D20E066C300DDD657 /* ContentManagerViewController.m */,
+				348C1CE520E317FA00658EFB /* ManageRoomsViewController.h */,
+				348C1CE620E317FA00658EFB /* ManageRoomsViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -536,6 +541,7 @@
 				342C4F8F20E066C300DDD657 /* SegueBetweenEmbedded.m in Sources */,
 				342C4F9920E06C3200DDD657 /* Utilities.m in Sources */,
 				342C4F5B20E0615E00DDD657 /* AppDelegate.m in Sources */,
+				348C1CE720E317FA00658EFB /* ManageRoomsViewController.m in Sources */,
 				342C4F9F20E06D4800DDD657 /* Constants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
