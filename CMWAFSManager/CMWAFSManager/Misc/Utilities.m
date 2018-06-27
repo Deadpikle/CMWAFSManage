@@ -16,6 +16,9 @@
     unsigned char redByte, greenByte, blueByte;
     
     if (inColorString) {
+        if ([inColorString hasPrefix:@"#"]) {
+            inColorString = [inColorString stringByReplacingOccurrencesOfString:@"#" withString:@""];
+        }
         NSScanner *scanner = [NSScanner scannerWithString:inColorString];
         [scanner scanHexInt:&colorCode]; // ignore error
     }
