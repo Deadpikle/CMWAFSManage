@@ -39,6 +39,7 @@
                     MaxPeople INTEGER, \
                     Color TEXT)";
             [database executeUpdate:insertRoomsTable];
+            database.userVersion = 1;
         }
     }
 }
